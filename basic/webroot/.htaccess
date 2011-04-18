@@ -1,0 +1,19 @@
+#<IfModule mod_expires.c>
+#ExpiresActive on
+#<FilesMatch "\.(css|js)$">
+#    ExpiresDefault "access plus 1 hours"
+#</FilesMatch>
+#<FilesMatch "\.(gif|jpe?g|png)$">
+#    ExpiresDefault "access plus 1 hours"
+#</FilesMatch>
+#</IfModule>
+#<IfModule mod_headers.c>
+#Header append Vary Accept-Encoding
+#</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>
