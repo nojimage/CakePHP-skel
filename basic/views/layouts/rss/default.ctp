@@ -1,17 +1,17 @@
 <?php
-echo $rss->header();
+
+/* @var $this CodeCompletionView */
+echo $this->Rss->header();
 
 if (!isset($channel)) {
-	$channel = array();
+    $channel = array();
 }
 if (!isset($channel['title'])) {
-	$channel['title'] = $title_for_layout;
+    $channel['title'] = $title_for_layout;
 }
 
-echo $rss->document(
-	$rss->channel(
-		array(), $channel, $content_for_layout
-	)
+echo $this->Rss->document(
+        $this->Rss->channel(
+                array(), $channel, $content_for_layout
+        )
 );
-
-?>
