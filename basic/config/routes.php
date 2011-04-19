@@ -1,5 +1,7 @@
 <?php
 
+Router::parseExtensions();
+
 /**
  * Routes Configuration
  */
