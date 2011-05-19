@@ -7,13 +7,13 @@ Copyright 2011, nojimage (http://php-tips.com)
 h2. Instration
 
 <pre>
-git submodule add -f https://github.com/nojimage/CakePHP-skel plguins/skel
+git submodule add -f https://github.com/nojimage/CakePHP-skel plugins/skel
 </pre>
 
 h2. Usage
 
 <pre>
-cake/console/cake bake project <appname> -app . -skel plguins/skel/basic
+cake/console/cake bake project <appname> -app . -skel plugins/skel/basic
 </pre>
 
 h2. LISENCE
