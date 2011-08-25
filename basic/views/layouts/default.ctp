@@ -12,7 +12,7 @@
 <?php
     echo $this->Html->meta('icon');
     echo $this->Html->css('cake.generic');
-    echo $this->Html->script(array('jquery-1.5.2.min'));
+    echo $this->Html->script(array('jquery-1.6.2.min'));
     echo $scripts_for_layout;
 ?>
 </head>
