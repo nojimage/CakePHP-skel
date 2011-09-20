@@ -4,7 +4,7 @@ PHP 5.2+, CakePHP 1.3+
 
 Copyright 2011, nojimage (http://php-tips.com)
 
-h2. Instration
+h2. Installation
 
 <pre>
 git submodule add -f https://github.com/nojimage/CakePHP-skel plugins/skel
